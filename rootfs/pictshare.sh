@@ -18,7 +18,7 @@ _update() {
     cp -r pictshare-master/* .
     rm -r master pictshare-master
     chmod +x bin/ffmpeg
-    chmod -R 777 data
+    # chmod -R 777 data # this causes lots of delay if the folder is full
     chmod -R 777 tmp
 }
 
